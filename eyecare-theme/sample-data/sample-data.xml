@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- WordPress eXtended RSS (WXR) — Eyecare Theme Sample Data -->
+<!-- Generated for Eyecare v1.0.0 -->
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+    <title>Eyecare Demo Site</title>
+    <link>http://example.com</link>
+    <description>Eyecare WordPress Theme Sample Data</description>
+    <pubDate>Sat, 02 May 2026 09:00:00 +0000</pubDate>
+    <language>en-US</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>http://example.com</wp:base_site_url>
+    <wp:base_blog_url>http://example.com</wp:base_blog_url>
+
+    <wp:author>
+        <wp:author_id>1</wp:author_id>
+        <wp:author_login><![CDATA[admin]]></wp:author_login>
+        <wp:author_email><![CDATA[admin@example.com]]></wp:author_email>
+        <wp:author_display_name><![CDATA[Admin]]></wp:author_display_name>
+        <wp:author_first_name><![CDATA[]]></wp:author_first_name>
+        <wp:author_last_name><![CDATA[]]></wp:author_last_name>
+    </wp:author>
+
+    <!-- ── CATEGORIES ──────────────────────────────────────────────────── -->
+    <wp:category>
+        <wp:term_id>101</wp:term_id>
+        <wp:category_nicename><![CDATA[royal-courts]]></wp:category_nicename>
+        <wp:category_parent><![CDATA[]]></wp:category_parent>
+        <wp:cat_name><![CDATA[Royal Courts]]></wp:cat_name>
+    </wp:category>
+
+    <wp:category>
+        <wp:term_id>102</wp:term_id>
+        <wp:category_nicename><![CDATA[honour]]></wp:category_nicename>
+        <wp:category_parent><![CDATA[]]></wp:category_parent>
+        <wp:cat_name><![CDATA[Honour]]></wp:cat_name>
+    </wp:category>
+
+    <wp:category>
+        <wp:term_id>103</wp:term_id>
+        <wp:category_nicename><![CDATA[international]]></wp:category_nicename>
+        <wp:category_parent><![CDATA[]]></wp:category_parent>
+        <wp:cat_name><![CDATA[International]]></wp:cat_name>
+    </wp:category>
+
+    <wp:category>
+        <wp:term_id>104</wp:term_id>
+        <wp:category_nicename><![CDATA[history]]></wp:category_nicename>
+        <wp:category_parent><![CDATA[]]></wp:category_parent>
+        <wp:cat_name><![CDATA[History]]></wp:cat_name>
+    </wp:category>
+
+    <wp:category>
+        <wp:term_id>105</wp:term_id>
+        <wp:category_nicename><![CDATA[culture]]></wp:category_nicename>
+        <wp:category_parent><![CDATA[]]></wp:category_parent>
+        <wp:cat_name><![CDATA[Culture]]></wp:cat_name>
+    </wp:category>
+
+    <wp:category>
+        <wp:term_id>106</wp:term_id>
+        <wp:category_nicename><![CDATA[heritage]]></wp:category_nicename>
+        <wp:category_parent><![CDATA[]]></wp:category_parent>
+        <wp:cat_name><![CDATA[Heritage]]></wp:cat_name>
+    </wp:category>
+
+    <!-- ── NEWS POST 1 ─────────────────────────────────────────────────── -->
+    <item>
+        <title>Tradition &amp; Royal Courts of the Isaaq Kingdom</title>
+        <link>http://example.com/tradition-royal-courts-isaaq-kingdom/</link>
+        <pubDate>Fri, 18 Apr 2026 10:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <category domain="category" nicename="royal-courts"><![CDATA[Royal Courts]]></category>
+        <content:encoded><![CDATA[<p>The Isaaq Kingdom's legal tradition is deeply rooted in <em>xeer</em>, a customary law system that governed disputes, property rights and social relationships for centuries. Like the Zulu Kingdom's recognition of oral legal tradition, the Tolje'lo dynasty maintained a council of elders — the <strong>Guurti</strong> — who presided over all matters of justice and inter-clan relations.</p>
+
+<p>The Guurti operated as an upper house of wisdom, drawing on precedents passed down through oral tradition across generations. Decisions were binding and widely respected, reflecting a sophisticated understanding of governance without the need for written codes.</p>
+
+<h2>Key Principles of Xeer</h2>
+<ul>
+<li><strong>Collective responsibility:</strong> The clan shared responsibility for the actions of its members.</li>
+<li><strong>Compensation over punishment:</strong> Disputes were resolved through negotiated settlements, not imprisonment.</li>
+<li><strong>Oral precedent:</strong> Rulings were memorised by specialist elders and recited when relevant cases arose.</li>
+</ul>
+
+<p>Today, scholars compare this system favourably to indigenous legal systems worldwide, noting its ability to maintain social cohesion across vast territories without a standing army or centralised bureaucracy.</p>]]></content:encoded>
+        <excerpt:encoded><![CDATA[Parallels with Zulu kingdom's legal recognition — oral tradition endures through the Guurti.]]></excerpt:encoded>
+        <wp:post_id>101</wp:post_id>
+        <wp:post_date><![CDATA[2026-04-18 10:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-04-18 10:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[tradition-royal-courts-isaaq-kingdom]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+    </item>
+
+    <!-- ── NEWS POST 2 ─────────────────────────────────────────────────── -->
+    <item>
+        <title>King Dhuuh Baraar Honoured at Annual Ceremony</title>
+        <link>http://example.com/king-dhuuh-baraar-honoured-annual-ceremony/</link>
+        <pubDate>Sun, 22 Mar 2026 12:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <category domain="category" nicename="honour"><![CDATA[Honour]]></category>
+        <content:encoded><![CDATA[<p>A solemn gathering was held in Hargeisa to honour the memory of <strong>King Dhuuh Baraar</strong>, the last sovereign of the Tolje'lo dynasty. Representatives from the Somali diaspora and scholars of Nigerian Itsekiri heritage joined elders and community leaders to reflect on a shared legacy of African kingship.</p>
+
+<p>The ceremony included the recitation of traditional <em>gabay</em> poetry, a musical tribute performed by griots, and a panel discussion on the continued importance of pre-colonial African governance structures in shaping modern identity.</p>
+
+<blockquote><p>"King Dhuuh Baraar represents more than the end of a dynasty. He is a symbol of continuity, of memory, of a people's refusal to let their history be erased."</p></blockquote>
+
+<h2>About King Dhuuh Baraar</h2>
+<p>King Dhuuh Baraar was the eighth and final ruler of the Tolje'lo dynasty, reigning in the early 18th century. His reign marked the conclusion of roughly four centuries of Tolje'lo kingship over the Isaaq clans, beginning with King Harun in the 1300s.</p>]]></content:encoded>
+        <excerpt:encoded><![CDATA[Somali & Nigerian Itsekiri representatives unite to honour the last Tolje'lo king.]]></excerpt:encoded>
+        <wp:post_id>102</wp:post_id>
+        <wp:post_date><![CDATA[2026-03-22 12:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-03-22 12:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[king-dhuuh-baraar-honoured-annual-ceremony]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+    </item>
+
+    <!-- ── NEWS POST 3 ─────────────────────────────────────────────────── -->
+    <item>
+        <title>Isaaq Kingdom Delegation Visits London</title>
+        <link>http://example.com/isaaq-kingdom-delegation-visits-london/</link>
+        <pubDate>Tue, 10 Feb 2026 09:30:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <category domain="category" nicename="international"><![CDATA[International]]></category>
+        <content:encoded><![CDATA[<p>A high-level delegation representing the cultural legacy of the Isaaq Kingdom met with British academics, museum curators and members of the Somali diaspora community in London to begin preliminary discussions on the repatriation of cultural artefacts held in private and public collections.</p>
+
+<p>The visit centred on items believed to have been removed from the Maydh and Ogo regions during the colonial period. Among the items discussed were decorative weapons, manuscript fragments, and ceremonial objects associated with the Tolje'lo court.</p>
+
+<h2>International Precedents</h2>
+<p>The delegation pointed to successful repatriation efforts in other African contexts as a model. "We are not asking for confrontation," said one delegate. "We are asking for recognition — for the acknowledgement that these objects have a home and a people."</p>
+
+<p>A joint committee is expected to be established in the coming months to catalogue items and agree on a framework for return or shared stewardship.</p>]]></content:encoded>
+        <excerpt:encoded><![CDATA[Talks for artefact return and shared history with Adal successors held in the UK capital.]]></excerpt:encoded>
+        <wp:post_id>103</wp:post_id>
+        <wp:post_date><![CDATA[2026-02-10 09:30:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-02-10 09:30:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[isaaq-kingdom-delegation-visits-london]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+    </item>
+
+    <!-- ── NEWS POST 4 ─────────────────────────────────────────────────── -->
+    <item>
+        <title>The Eight Tolje&apos;lo Kings: A Complete Chronicle</title>
+        <link>http://example.com/eight-toljelo-kings-complete-chronicle/</link>
+        <pubDate>Thu, 15 Jan 2026 08:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <category domain="category" nicename="history"><![CDATA[History]]></category>
+        <content:encoded><![CDATA[<p>The Tolje'lo dynasty ruled the Isaaq Kingdom across eight successive monarchs, spanning from the 14th to the early 18th century. Each king contributed uniquely to the consolidation of Isaaq identity, territorial integrity and customary law.</p>
+
+<h2>The Eight Kings</h2>
+<ol>
+<li><strong>King Harun</strong> (c. 1300s) — Founder of the Tolje'lo lineage; established the first formal council of clan elders.</li>
+<li><strong>King Hasan</strong> — Expanded the kingdom's territory into the Ogo highland plateau.</li>
+<li><strong>King Ibrahim</strong> — Strengthened trade routes to the Gulf of Aden.</li>
+<li><strong>King Mohamud</strong> — Known as a jurist-king; codified key xeer principles during his reign.</li>
+<li><strong>King Idris</strong> — Oversaw a period of agricultural development and pastoral expansion.</li>
+<li><strong>King Yuusuf</strong> — Maintained neutrality during inter-clan conflicts, preserving unity.</li>
+<li><strong>King Cigaal</strong> — Initiated formal diplomatic contact with neighbouring sultanates.</li>
+<li><strong>King Dhuuh Baraar</strong> (early 1700s) — Last sovereign; his reign concluded with the gradual dissolution of centralised Tolje'lo authority.</li>
+</ol>
+
+<p>Each king's reign is preserved through oral tradition transmitted by specialist genealogists known as <em>Wadaad</em>, whose role was to memorise and recite royal history at ceremonies.</p>]]></content:encoded>
+        <excerpt:encoded><![CDATA[From King Harun in the 1300s to King Dhuuh Baraar in the 1700s — a four-century chronicle.]]></excerpt:encoded>
+        <wp:post_id>104</wp:post_id>
+        <wp:post_date><![CDATA[2026-01-15 08:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-01-15 08:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[eight-toljelo-kings-complete-chronicle]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+    </item>
+
+    <!-- ── NEWS POST 5 ─────────────────────────────────────────────────── -->
+    <item>
+        <title>Guurti Council: Xeer Law and Its Modern Relevance</title>
+        <link>http://example.com/guurti-council-xeer-law-modern-relevance/</link>
+        <pubDate>Fri, 05 Dec 2025 11:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <category domain="category" nicename="culture"><![CDATA[Culture]]></category>
+        <content:encoded><![CDATA[<p>Few indigenous governance systems have demonstrated the longevity and adaptability of <em>xeer</em>, the customary law tradition that flourished under the Tolje'lo dynasty. Today, the Guurti — a council of clan elders — remains an official part of Somaliland's bicameral legislature.</p>
+
+<h2>Foundations of Xeer</h2>
+<ul>
+<li><strong>Heer:</strong> Agreed norms between clans regarding compensation, resource sharing and mutual defence.</li>
+<li><strong>Diya:</strong> Blood money paid collectively by a clan to resolve killings or serious injury.</li>
+<li><strong>Shir:</strong> Public assemblies at which disputes are heard and resolved by consensus.</li>
+</ul>
+
+<h2>The Guurti in Somaliland Today</h2>
+<p>Somaliland's 1993 Borama Conference drew explicitly on xeer principles to draft a constitutional charter and establish a bicameral parliament. The upper house — the Guurti — is composed of 82 traditional elders and serves as the guardian of customary law and national reconciliation.</p>
+
+<p>Scholars of comparative constitutional law have increasingly recognised Somaliland's hybrid governance model as a successful case study in post-conflict state-building that honours indigenous legal traditions.</p>]]></content:encoded>
+        <excerpt:encoded><![CDATA[The ancient Guurti council and xeer customary law continue to shape Somali governance today.]]></excerpt:encoded>
+        <wp:post_id>105</wp:post_id>
+        <wp:post_date><![CDATA[2025-12-05 11:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2025-12-05 11:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[guurti-council-xeer-law-modern-relevance]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+    </item>
+
+    <!-- ── NEWS POST 6 ─────────────────────────────────────────────────── -->
+    <item>
+        <title>The Battle of Maydh: Commemorating a Turning Point</title>
+        <link>http://example.com/battle-of-maydh-commemorating-turning-point/</link>
+        <pubDate>Sat, 01 Nov 2025 14:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <category domain="category" nicename="heritage"><![CDATA[Heritage]]></category>
+        <content:encoded><![CDATA[<p>The coastal town of <strong>Maydh</strong>, nestled on the Gulf of Aden in what is now Somaliland, holds deep historical significance for the Isaaq clans. It is the site of one of the most celebrated military encounters in the region's oral tradition — a confrontation that tested the resilience of the Tolje'lo kingdom and the cohesion of the Isaaq confederacy.</p>
+
+<p>Each year communities gather to commemorate these events through <em>gabay</em> (formal epic poetry), the retelling of oral chronicles by community historians, and analysis of the military tactics employed — all passed down without written documentation for over three centuries.</p>
+
+<h2>Why Maydh Matters</h2>
+<p>Maydh is more than a battle site. It is the place where, according to tradition, Sheikh Ishaaq — the founding ancestor of the Isaaq clans — first arrived on the Somali coast from Arabia in the 12th century. The combination of that founding narrative with later military history makes Maydh a layered place of memory and identity.</p>
+
+<p>The commemoration reaffirms xeer obligations between the Isaaq sub-clans, updates oral records in the presence of community witnesses, and welcomes young people into the tradition of custodianship.</p>]]></content:encoded>
+        <excerpt:encoded><![CDATA[Gabay poetry, oral history and military strategy converge at the annual Maydh commemoration.]]></excerpt:encoded>
+        <wp:post_id>106</wp:post_id>
+        <wp:post_date><![CDATA[2025-11-01 14:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2025-11-01 14:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[battle-of-maydh-commemorating-turning-point]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+    </item>
+
+    <!-- ── PAGE: HOME ──────────────────────────────────────────────────── -->
+    <item>
+        <title>Home</title>
+        <link>http://example.com/sample-home/</link>
+        <pubDate>Sat, 02 May 2026 09:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<p>Welcome to the Isaaq Kingdom — preserving the royal heritage of the Tolje'lo dynasty since the 14th century.</p>]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>111</wp:post_id>
+        <wp:post_date><![CDATA[2026-05-02 09:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-05-02 09:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[sample-home]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+    </item>
+
+    <!-- ── PAGE: ABOUT ─────────────────────────────────────────────────── -->
+    <item>
+        <title>About the Isaaq Kingdom</title>
+        <link>http://example.com/about-the-isaaq-kingdom/</link>
+        <pubDate>Sat, 02 May 2026 09:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<p>The Isaaq Kingdom, led by the Tolje'lo dynasty, was a sovereign polity that governed the Isaaq clans of the Horn of Africa from the 14th century until the early 18th century. Founded after the decline of the Adal Sultanate, the kingdom preserved Islamic scholarship, xeer customary law, and a rich tradition of oral governance.</p>
+
+<h2>The Tolje'lo Dynasty</h2>
+<p>Eight successive kings from the Tolje'lo lineage guided the Isaaq confederation across roughly four centuries. Their authority was both political and spiritual, drawing on the revered ancestry of Sheikh Ishaaq — a 12th-century Islamic scholar who arrived on the Somali coast from Arabia.</p>
+
+<h2>Heritage &amp; Legacy</h2>
+<p>Though the kingdom no longer exists as a political entity, its legacy is very much alive. The Guurti council that flourished under Tolje'lo rule remains an active institution in Somaliland's bicameral legislature. Xeer principles continue to govern inter-clan relations. The gabay tradition of oral epic poetry keeps royal history alive in communities from Maydh to Hargeisa.</p>]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>112</wp:post_id>
+        <wp:post_date><![CDATA[2026-05-02 09:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-05-02 09:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[about-the-isaaq-kingdom]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+    </item>
+
+    <!-- ── PAGE: CONTACT ───────────────────────────────────────────────── -->
+    <item>
+        <title>Contact</title>
+        <link>http://example.com/contact/</link>
+        <pubDate>Sat, 02 May 2026 09:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<p>For inquiries about the Isaaq Kingdom heritage project, please use the details below.</p>
+
+<h2>Get in Touch</h2>
+<p>We welcome correspondence from researchers, diaspora community members, cultural institutions and media.</p>
+<ul>
+<li><strong>Email:</strong> info@example.com</li>
+<li><strong>Location:</strong> Hargeisa, Somaliland</li>
+</ul>]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>113</wp:post_id>
+        <wp:post_date><![CDATA[2026-05-02 09:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-05-02 09:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[contact]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+    </item>
+
+    <!-- ── EVENT 1 ─────────────────────────────────────────────────────── -->
+    <item>
+        <title>Launch &apos;Booqor: Tolje&apos;lo Legacy&apos;</title>
+        <link>http://example.com/events/booqor-toljelo-legacy-launch-2026/</link>
+        <pubDate>Sat, 02 May 2026 09:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<p>The highly anticipated documentary series <em>Booqor: Tolje'lo Legacy</em> premieres in Hargeisa with a special ceremony attended by royal elders, scholars and members of the Isaaq diaspora from across the world.</p>
+<p>The series spans three episodes, covering the history of the Tolje'lo dynasty from its founding by King Harun in the 14th century to the final reign of King Dhuuh Baraar in the early 18th century.</p>]]></content:encoded>
+        <excerpt:encoded><![CDATA[Hargeisa premiere of the landmark documentary series with royal elders and diaspora guests.]]></excerpt:encoded>
+        <wp:post_id>121</wp:post_id>
+        <wp:post_date><![CDATA[2026-05-02 09:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-05-02 09:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[booqor-toljelo-legacy-launch-2026]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[eyecare_event]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_eyecare_event_year]]></wp:meta_key>
+            <wp:meta_value><![CDATA[2026]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- ── EVENT 2 ─────────────────────────────────────────────────────── -->
+    <item>
+        <title>Battle of Maydh Commemoration</title>
+        <link>http://example.com/events/battle-of-maydh-commemoration-event-2025/</link>
+        <pubDate>Sat, 02 May 2026 09:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<p>The annual Battle of Maydh Commemoration draws historians, poets and community elders to the historic coastal town on the Gulf of Aden. The daylong event features recitations of gabay (oral epic poetry), panel discussions on military tactics, and a communal feast.</p>]]></content:encoded>
+        <excerpt:encoded><![CDATA[Gabay poetry and military strategy remembrance held at the historic coastal town of Maydh.]]></excerpt:encoded>
+        <wp:post_id>122</wp:post_id>
+        <wp:post_date><![CDATA[2026-05-02 09:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-05-02 09:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[battle-of-maydh-commemoration-event-2025]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[eyecare_event]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_eyecare_event_year]]></wp:meta_key>
+            <wp:meta_value><![CDATA[2025]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- ── EVENT 3 ─────────────────────────────────────────────────────── -->
+    <item>
+        <title>Isaaq Guurti Council Annual Gathering</title>
+        <link>http://example.com/events/isaaq-guurti-council-gathering-2025/</link>
+        <pubDate>Sat, 02 May 2026 09:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<p>The annual Isaaq Guurti Council gathering brings together elders from all eight Isaaq sub-clans to reaffirm xeer agreements, resolve outstanding inter-clan disputes and celebrate shared heritage. The gathering is followed by a cultural festival featuring traditional music, poetry and dance.</p>]]></content:encoded>
+        <excerpt:encoded><![CDATA[Annual festival and xeer reaffirmation — all eight Isaaq sub-clans converge for the elder council.]]></excerpt:encoded>
+        <wp:post_id>123</wp:post_id>
+        <wp:post_date><![CDATA[2026-05-02 09:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-05-02 09:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[isaaq-guurti-council-gathering-2025]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[eyecare_event]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_eyecare_event_year]]></wp:meta_key>
+            <wp:meta_value><![CDATA[2025]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- ── EVENT 4 ─────────────────────────────────────────────────────── -->
+    <item>
+        <title>Royal Heritage Exhibition</title>
+        <link>http://example.com/events/royal-heritage-exhibition-2024/</link>
+        <pubDate>Sat, 02 May 2026 09:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<p>The Royal Heritage Exhibition brings together a collection of artefacts, manuscripts and photographs documenting the material culture of the Isaaq Kingdom and the Tolje'lo dynasty. Items on display include reproductions of ceremonial objects, hand-copied genealogical manuscripts and early 20th-century photographs of Maydh.</p>]]></content:encoded>
+        <excerpt:encoded><![CDATA[A travelling exhibition of Isaaq Kingdom artefacts and manuscripts at the Hargeisa Cultural Centre.]]></excerpt:encoded>
+        <wp:post_id>124</wp:post_id>
+        <wp:post_date><![CDATA[2026-05-02 09:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-05-02 09:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[royal-heritage-exhibition-2024]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[eyecare_event]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_eyecare_event_year]]></wp:meta_key>
+            <wp:meta_value><![CDATA[2024]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- ── EVENT 5 ─────────────────────────────────────────────────────── -->
+    <item>
+        <title>Sheikh Ishaaq Remembrance Day</title>
+        <link>http://example.com/events/sheikh-ishaaq-remembrance-day-2024/</link>
+        <pubDate>Sat, 02 May 2026 09:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<p>Sheikh Ishaaq Remembrance Day honours the memory of the founding ancestor of the Isaaq clans — a 12th-century Islamic scholar from Arabia whose arrival on the Somali coast initiated one of the most significant genealogical and cultural lineages in the Horn of Africa.</p>
+<p>The day is marked by Quran recitations, communal gatherings, and the retelling of oral histories tracing the lineage from Sheikh Ishaaq through his eight sons to the eight Isaaq sub-clans of today.</p>]]></content:encoded>
+        <excerpt:encoded><![CDATA[Annual commemoration of Sheikh Ishaaq's 12th-century arrival on the Somali coast from Arabia.]]></excerpt:encoded>
+        <wp:post_id>125</wp:post_id>
+        <wp:post_date><![CDATA[2026-05-02 09:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-05-02 09:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[sheikh-ishaaq-remembrance-day-2024]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[eyecare_event]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_eyecare_event_year]]></wp:meta_key>
+            <wp:meta_value><![CDATA[2024]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+</channel>
+</rss>

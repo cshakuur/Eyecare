@@ -221,3 +221,10 @@ function eyecare_default_nav() {
 // INCLUDE CUSTOMIZER
 // =====================================================
 require get_template_directory() . '/inc/customizer.php';
+
+// =====================================================
+// INCLUDE DEMO IMPORTER (admin-only)
+// =====================================================
+if ( is_admin() ) {
+    require get_template_directory() . '/inc/demo-import.php';
+}
