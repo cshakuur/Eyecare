@@ -57,7 +57,9 @@ get_header();
             <div class="history-card">
                 <?php $hist_img = get_theme_mod( "history_{$i}_image", '' ); ?>
                 <?php if ( $hist_img ) : ?>
-                    <img src="<?php echo esc_url( $hist_img ); ?>" alt="<?php echo esc_attr( get_theme_mod( "history_{$i}_title", '' ) ); ?>" class="history-card-img">
+                    <div class="history-card-img-wrap">
+                        <img src="<?php echo esc_url( $hist_img ); ?>" alt="<?php echo esc_attr( get_theme_mod( "history_{$i}_title", '' ) ); ?>" class="history-card-img">
+                    </div>
                 <?php else : ?>
                     <i class="fas fa-landmark history-icon" aria-hidden="true"></i>
                 <?php endif; ?>
@@ -192,7 +194,9 @@ get_header();
             <div class="heritage-piece">
                 <?php $her_img = get_theme_mod( "heritage_{$i}_image", '' ); ?>
                 <?php if ( $her_img ) : ?>
-                    <img src="<?php echo esc_url( $her_img ); ?>" alt="<?php echo esc_attr( get_theme_mod( "heritage_{$i}_title", '' ) ); ?>" class="heritage-piece-img">
+                    <div class="heritage-piece-img-wrap">
+                        <img src="<?php echo esc_url( $her_img ); ?>" alt="<?php echo esc_attr( get_theme_mod( "heritage_{$i}_title", '' ) ); ?>" class="heritage-piece-img">
+                    </div>
                 <?php else : ?>
                     <i class="fas fa-landmark" aria-hidden="true"></i>
                 <?php endif; ?>

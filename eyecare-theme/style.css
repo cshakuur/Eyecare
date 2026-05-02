@@ -374,6 +374,7 @@ body {
     padding: 3rem;
     overflow: hidden;
     position: relative;
+    min-height: 350px;
 }
 
 .king-left i {
@@ -472,12 +473,18 @@ body {
     display: block;
 }
 
-.history-card-img {
+.history-card-img-wrap {
     width: 100%;
     height: 180px;
-    object-fit: cover;
+    overflow: hidden;
     border-radius: 40px 8px 40px 8px;
     margin-bottom: 1.2rem;
+}
+
+.history-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -656,12 +663,18 @@ body {
     display: block;
 }
 
-.heritage-piece-img {
+.heritage-piece-img-wrap {
     width: 100%;
     height: 160px;
-    object-fit: cover;
+    overflow: hidden;
     border-radius: 60px 8px 60px 8px;
     margin-bottom: 1rem;
+}
+
+.heritage-piece-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
