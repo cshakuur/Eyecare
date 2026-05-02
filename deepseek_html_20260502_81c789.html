@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaaq Kingdom · Royal Heritage · Boqortooyada Isaaq</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Playfair + Plus Jakarta Sans for modern mix -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ---------- GLOBAL RESET & VARIABLES ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f2efe7;
+            color: #1e2c2a;
+            overflow-x: hidden;
+        }
+
+        /* Vibrant, luxurious palette — rich, deep, and punchy */
+        :root {
+            --sapphire: #0f4c5c;
+            --ruby: #c44536;
+            --amber: #ed9a4a;
+            --cream: #fef9ed;
+            --ivory: #fffcf0;
+            --charcoal: #2d3e40;
+            --gold-leaf: #dba870;
+            --shadow-strong: 0 30px 40px -20px #0b3b3b;
+            --shadow-float: 0 40px 50px -25px #00000040;
+        }
+
+        /* ========== SLIDESHOW HEADER (3-WAY ATTRACTIVE) ========== */
+        .hero-slideshow {
+            position: relative;
+            height: 92vh;
+            min-height: 650px;
+            color: white;
+            overflow: hidden;
+            border-bottom: 8px solid var(--ruby);
+        }
+
+        /* slides container */
+        .slides-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center 20%;
+            opacity: 0;
+            transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .slide.active-slide {
+            opacity: 1;
+            z-index: 10;
+        }
+
+        /* unique overlay per slide for rich texture */
+        .slide::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, #00000060 0%, #0f4c5c90 100%);
+            z-index: 1;
+        }
+
+        .slide1 { background-image: url('https://images.pexels.com/photos/533769/pexels-photo-533769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); }
+        .slide2 { background-image: url('https://images.pexels.com/photos/3689867/pexels-photo-3689867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); }
+        .slide3 { background-image: url('https://images.pexels.com/photos/96916/pexels-photo-96916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); }
+
+        .slide-content {
+            position: relative;
+            z-index: 20;
+            max-width: 1000px;
+            padding: 2rem;
+            transform: translateY(20px);
+            animation: riseUp 1s forwards 0.5s;
+            opacity: 0;
+        }
+
+        .active-slide .slide-content {
+            opacity: 1;
+        }
+
+        @keyframes riseUp {
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .slide-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 5.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            text-shadow: 0 10px 20px #021010;
+            letter-spacing: -1px;
+        }
+
+        .slide-content h2 i {
+            color: var(--amber);
+            margin-right: 20px;
+            font-size: 5rem;
+            filter: drop-shadow(0 0 15px #ffc27a);
+        }
+
+        .slide-tagline {
+            font-size: 2rem;
+            font-weight: 400;
+            background: rgba(196, 69, 54, 0.7);
+            backdrop-filter: blur(10px);
+            display: inline-block;
+            padding: 0.5rem 2.5rem;
+            border-radius: 80px;
+            margin: 1.5rem 0;
+            border: 2px solid var(--amber);
+            font-weight: 600;
+        }
+
+        .slide-desc {
+            font-size: 1.4rem;
+            max-width: 700px;
+            margin: 1rem auto;
+            background: #0f4c5c80;
+            backdrop-filter: blur(8px);
+            padding: 1rem 2rem;
+            border-radius: 80px;
+            border-left: 6px solid var(--amber);
+        }
+
+        /* navigation arrows */
+        .slide-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border: 2px solid rgba(255,215,140,0.6);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .slide-arrow:hover {
+            background: var(--ruby);
+            border-color: white;
+            transform: translateY(-50%) scale(1.08);
+        }
+
+        .prev { left: 30px; }
+        .next { right: 30px; }
+
+        /* slide indicators */
+        .slide-indicators {
+            position: absolute;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 50;
+            display: flex;
+            gap: 1.2rem;
+        }
+
+        .dot {
+            width: 16px;
+            height: 16px;
+            background: rgba(255,255,240,0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .dot.active-dot {
+            background: var(--amber);
+            transform: scale(1.3);
+            border-color: white;
+        }
+
+        /* ========== ATTRACTIVE, DIFFERENTIATED BODY ========== */
+        /* floating navigation (unique) */
+        .floating-nav {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            padding: 1.2rem 2rem;
+            background: #ffffffdd;
+            backdrop-filter: blur(16px);
+            border-radius: 100px;
+            width: fit-content;
+            margin: -3rem auto 3rem;
+            position: relative;
+            z-index: 100;
+            box-shadow: 0 25px 40px -18px #0f4c5c;
+            border: 2px solid var(--amber);
+        }
+
+        .floating-nav a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--sapphire);
+            padding: 0.6rem 1.2rem;
+            border-radius: 60px;
+            transition: 0.2s;
+        }
+
+        .floating-nav a:hover {
+            background: var(--ruby);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* section titles — super attractive */
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--sapphire);
+            margin: 2.5rem 0 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px; left: 0;
+            width: 80%; height: 8px;
+            background: linear-gradient(90deg, var(--ruby), var(--amber));
+            border-radius: 10px;
+        }
+
+        .title-icon {
+            color: var(--ruby);
+            margin-right: 1rem;
+            font-size: 3rem;
+        }
+
+        /* ------- KING SECTION (luxurious) ------- */
+        .king-panel {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            background: white;
+            border-radius: 120px 30px 120px 30px;
+            overflow: hidden;
+            box-shadow: var(--shadow-strong);
+            border: 2px solid var(--gold-leaf);
+            margin: 3rem 0;
+        }
+
+        .king-left {
+            background: linear-gradient(145deg, #165a5a, #0a4242);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+        }
+
+        .king-left i {
+            font-size: 15rem;
+            color: #ffd89c;
+            filter: drop-shadow(0 20px 15px #052d2d);
+        }
+
+        .king-right {
+            padding: 3rem 3rem 3rem 2.5rem;
+            background: var(--cream);
+        }
+
+        .king-name {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--sapphire);
+            line-height: 1;
+        }
+
+        .king-badge {
+            display: inline-block;
+            background: var(--ruby);
+            color: white;
+            padding: 0.3rem 2rem;
+            border-radius: 60px;
+            font-size: 1.3rem;
+            margin: 1rem 0 1.2rem;
+            font-weight: 600;
+        }
+
+        .king-right p {
+            font-size: 1.25rem;
+            color: #1e3e3e;
+            margin-bottom: 2rem;
+        }
+
+        .btn-king {
+            background: transparent;
+            border: 3px solid var(--ruby);
+            padding: 0.9rem 2.2rem;
+            font-size: 1.3rem;
+            border-radius: 60px;
+            font-weight: 700;
+            color: var(--ruby);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .btn-king:hover {
+            background: var(--ruby);
+            color: white;
+        }
+
+        /* ------- HISTORY & STATS (fresh) ------- */
+        .history-mosaic {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.8rem;
+            margin: 2rem 0 3rem;
+        }
+
+        .history-card {
+            background: white;
+            border-radius: 60px 15px 60px 15px;
+            padding: 2.5rem 1.8rem;
+            box-shadow: 0 20px 30px -15px #266060;
+            border: 1px solid #efcfa7;
+            transition: 0.3s;
+        }
+
+        .history-card:hover {
+            transform: translateY(-15px) rotate(0.5deg);
+            background: #fffaf2;
+            border-color: var(--ruby);
+        }
+
+        .history-icon {
+            font-size: 3.5rem;
+            color: var(--amber);
+            margin-bottom: 1rem;
+        }
+
+        .history-card h3 {
+            font-size: 2.2rem;
+            color: var(--sapphire);
+            font-weight: 800;
+        }
+
+        .history-card p {
+            font-size: 1.1rem;
+        }
+
+        /* ------- NEWS with PARALLAX CARDS (pop) ------- */
+        .news-grid-dynamic {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.2rem;
+            margin: 3rem 0;
+        }
+
+        .news-super {
+            background: #ffffff;
+            border-radius: 45px 10px 45px 10px;
+            overflow: hidden;
+            box-shadow: 0 30px 30px -18px #0f5353;
+            border: 2px solid #f0cba2;
+            transition: 0.25s;
+        }
+
+        .news-super:hover {
+            transform: scale(1.02) translateY(-10px);
+            border-color: var(--ruby);
+            box-shadow: 0 40px 40px -18px #a33b2b;
+        }
+
+        .news-img-super {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .news-category {
+            position: absolute;
+            bottom: 15px; right: 15px;
+            background: var(--ruby);
+            color: white;
+            padding: 0.3rem 1.5rem;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .news-content-super {
+            padding: 1.8rem 1.8rem 2.2rem;
+        }
+
+        .news-content-super h3 {
+            font-size: 1.8rem;
+            color: var(--sapphire);
+        }
+
+        /* ------- EVENTS (luxury timeline) ------- */
+        .event-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .event-item-distinct {
+            background: linear-gradient(95deg, #fef5e6, white);
+            border-radius: 100px 20px 100px 20px;
+            padding: 1.8rem 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            border-left: 10px solid var(--amber);
+            box-shadow: 0 10px 18px -12px #174e4e;
+            transition: 0.2s;
+        }
+
+        .event-item-distinct:hover {
+            border-left-color: var(--ruby);
+            transform: translateX(12px);
+            background: white;
+        }
+
+        .event-year {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--ruby);
+            min-width: 110px;
+        }
+
+        /* ------- HERITAGE CARDS (vibrant) ------- */
+        .heritage-showcase {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .heritage-piece {
+            background: #fcf3e4;
+            border-radius: 80px 15px 80px 15px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border: 2px dashed var(--gold-leaf);
+            transition: 0.3s;
+        }
+
+        .heritage-piece:hover {
+            background: var(--sapphire);
+            color: white;
+            border: 2px solid var(--amber);
+        }
+
+        .heritage-piece i {
+            font-size: 4rem;
+            color: var(--ruby);
+            margin-bottom: 1rem;
+        }
+
+        .heritage-piece:hover i {
+            color: var(--amber);
+        }
+
+        /* lineage banner (extra pop) */
+        .lineage-banner-modern {
+            background: linear-gradient(105deg, #c44536, #ed9a4a);
+            border-radius: 120px;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+            color: #fff7e3;
+            margin: 3rem 0 2rem;
+            box-shadow: 0 30px 30px -15px #973f2e;
+            border: 3px solid white;
+        }
+
+        /* footer bold */
+        .footer-attractive {
+            background: #0f4c5c;
+            color: #f0e5d5;
+            padding: 3rem 2rem;
+            border-top: 12px solid var(--amber);
+            margin-top: 4rem;
+        }
+
+        .footer-flex-attractive {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .social-icons i {
+            font-size: 2rem;
+            margin: 0 0.5rem;
+            color: #fad2a6;
+            transition: 0.15s;
+        }
+
+        .social-icons i:hover {
+            color: var(--ruby);
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+<!-- ========== 3-WAY SLIDESHOW HEADER (ATTRACTIVE) ========== -->
+<section class="hero-slideshow">
+    <div class="slides-container">
+        <!-- slide 1 -->
+        <div class="slide slide1 active-slide">
+            <div class="slide-content">
+                <h2><i class="fas fa-crown"></i> Isaaq Kingdom</h2>
+                <div class="slide-tagline">Boqortooyada Isaaq · المملكة الإسحاقية</div>
+                <div class="slide-desc">Tolje'lo dynasty · eight kings, one legacy since 14th century</div>
+            </div>
+        </div>
+        <!-- slide 2 -->
+        <div class="slide slide2">
+            <div class="slide-content">
+                <h2><i class="fas fa-scroll"></i> The Royal Chronicle</h2>
+                <div class="slide-tagline">King Harun to King Dhuuh Baraar</div>
+                <div class="slide-desc">From the first Tolje'lo ruler to the last sovereign — centuries of leadership</div>
+            </div>
+        </div>
+        <!-- slide 3 -->
+        <div class="slide slide3">
+            <div class="slide-content">
+                <h2><i class="fas fa-mountain"></i> Land of Maydh & Ogo</h2>
+                <div class="slide-tagline">Cradle of the Isaaq clans</div>
+                <div class="slide-desc">Where Sheikh Ishaaq settled and the eight sons established their heritage</div>
+            </div>
+        </div>
+
+        <!-- arrows -->
+        <div class="slide-arrow prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></div>
+        <div class="slide-arrow next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></div>
+
+        <!-- indicators -->
+        <div class="slide-indicators">
+            <span class="dot active-dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+</section>
+
+<!-- floating navigation (super attractive) -->
+<div class="floating-nav">
+    <a href="#">Home</a>
+    <a href="#king">His Majesty</a>
+    <a href="#history">History</a>
+    <a href="#heritage">Heritage</a>
+    <a href="#news">News</a>
+    <a href="#events">Events</a>
+</div>
+
+<main class="container">
+    <!-- KING SECTION (differentiated) -->
+    <section id="king">
+        <div class="section-title"><i class="fas fa-star title-icon"></i> His Royal Majesty</div>
+        <div class="king-panel">
+            <div class="king-left">
+                <i class="fas fa-user-turban"></i>
+            </div>
+            <div class="king-right">
+                <div class="king-name">King Dhuuh Baraar</div>
+                <div class="king-badge"><i class="fas fa-feather"></i> Tolje'lo dynasty · last sovereign (early 1700s)</div>
+                <p>King Dhuuh Baraar stands as the final monarch of the historic Isaaq Kingdom. As a ruler of the Tolje'lo dynasty, he embodied the legacy tracing back to Sheikh Isaaq Bin Ahmed. His reign marks the culmination of eight Tolje'lo kings who guided the Isaaq clans from the 13th century — shaping identity, justice, and resilience in the Horn of Africa.</p>
+                <button class="btn-king" onclick="alert('🎬 Royal纪录片: The Tolje\'lo Legacy')"><i class="fas fa-play"></i> Watch elders' traditions</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTORY section with mosaic stats (different content) -->
+    <section id="history">
+        <div class="section-title"><i class="fas fa-timeline title-icon"></i> The Kingdom's Legacy</div>
+        <div class="history-mosaic">
+            <div class="history-card">
+                <i class="fas fa-calendar-alt history-icon"></i>
+                <h3>14th Century</h3>
+                <p>Establishment after Adal Sultanate's fall — Tolje'lo dynasty takes lead.</p>
+            </div>
+            <div class="history-card">
+                <i class="fas fa-flag history-icon"></i>
+                <h3>8 Tolje'lo Kings</h3>
+                <p>From King Harun (1300s) to King Dhuuh Baraar (1700s), centuries of rule.</p>
+            </div>
+            <div class="history-card">
+                <i class="fas fa-people-group history-icon"></i>
+                <h3>8 Isaaq Clans</h3>
+                <p>Descended from Sheikh Ishaaq's eight sons, uniting under Tolje'lo.</p>
+            </div>
+        </div>
+        <!-- extra attractive fact -->
+        <div style="background:#f7e4cf; border-radius:100px; padding:1rem 2rem; text-align:center; font-size:1.4rem; border:3px solid var(--ruby);">
+            ⏳ The Guurti council & xeer customary law flourished under Tolje'lo.
+        </div>
+    </section>
+
+    <!-- NEWS section (3 cards super) -->
+    <section id="news">
+        <div class="section-title"><i class="fas fa-newspaper title-icon"></i> Latest Updates</div>
+        <div class="news-grid-dynamic">
+            <div class="news-super" onclick="alert('🔹 Read full judgment analogy')">
+                <div class="news-img-super" style="background-image: url('https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+                    <span class="news-category">Royal Courts</span>
+                </div>
+                <div class="news-content-super">
+                    <h3>Tradition & law</h3>
+                    <p>Parallels with Zulu kingdom's legal recognition — oral tradition endures.</p>
+                </div>
+            </div>
+            <div class="news-super" onclick="alert('🏆 Award ceremony details')">
+                <div class="news-img-super" style="background-image: url('https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+                    <span class="news-category">Honour</span>
+                </div>
+                <div class="news-content-super">
+                    <h3>King Dhuuh Baraar honoured</h3>
+                    <p>Somali & Nigerian Itsekiri representatives unite to honour last Tolje'lo king.</p>
+                </div>
+            </div>
+            <div class="news-super" onclick="alert('🤝 UK delegation update')">
+                <div class="news-img-super" style="background-image: url('https://images.pexels.com/photos/460753/pexels-photo-460753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+                    <span class="news-category">International</span>
+                </div>
+                <div class="news-content-super">
+                    <h3>Delegation in London</h3>
+                    <p>Talks for artefact return and shared history with Adal successors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTS with timeline effect -->
+    <section id="events">
+        <div class="section-title"><i class="fas fa-clock title-icon"></i> Recent Royal Events</div>
+        <div class="event-timeline">
+            <div class="event-item-distinct" onclick="alert('🎬 Booqor premiere')">
+                <span class="event-year">2026</span>
+                <div><h3 style="font-size:2rem;color:var(--sapphire);">Launch "Booqor: Tolje'lo Legacy"</h3><p>Hargeisa premiere with royal elders.</p></div>
+            </div>
+            <div class="event-item-distinct" onclick="alert('⚔️ Maydh commemoration')">
+                <span class="event-year">2025</span>
+                <div><h3 style="font-size:2rem;color:var(--sapphire);">Battle of Maydh Commemoration</h3><p>Gabay poetry & military strategy remembrance.</p></div>
+            </div>
+            <div class="event-item-distinct" onclick="alert('🤲 Guurti gathering')">
+                <span class="event-year">2025</span>
+                <div><h3 style="font-size:2rem;color:var(--sapphire);">Isaaq Guurti Council</h3><p>Annual festival & xeer reaffirmation.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERITAGE & DOCUMENTS (vibrant) -->
+    <section id="heritage">
+        <div class="section-title"><i class="fas fa-images title-icon"></i> Royal Imagery & Documents</div>
+        <div class="heritage-showcase">
+            <div class="heritage-piece">
+                <i class="fas fa-flag"></i>
+                <h3>Adal Banner</h3>
+                <p>Used by Adal & Isaaq on shrines.</p>
+            </div>
+            <div class="heritage-piece">
+                <i class="fas fa-book-quran"></i>
+                <h3>Sheikh Ishaaq</h3>
+                <p>12th c. arrival, 8 sons = 8 clans.</p>
+            </div>
+            <div class="heritage-piece">
+                <i class="fas fa-tree"></i>
+                <h3>King Harun</h3>
+                <p>First Tolje'lo ruler (1300s).</p>
+            </div>
+        </div>
+        <!-- lineage banner from your file -->
+        <div class="lineage-banner-modern">
+            <i class="fas fa-crown"></i> Ibrahim · Isaag · Yaqut · King Mohammed · King of Isaag — preserved lineage
+        </div>
+    </section>
+</main>
+
+<!-- footer with social pop -->
+<footer class="footer-attractive">
+    <div class="footer-flex-attractive">
+        <div style="font-size:2.5rem; font-weight:800;">Isaaq Kingdom <i class="fas fa-crown"></i></div>
+        <div class="social-icons">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div>© 2026 · Tolje'lo Heritage</div>
+    </div>
+    <div style="text-align:center; margin-top:2rem;">Honouring eight kings, one legacy — inspired by zulukingdom.co.za</div>
+</footer>
+
+<!-- SLIDESHOW JAVASCRIPT (simple and effective) -->
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+    function showSlide(index) {
+        if (index >= slides.length) index = 0;
+        if (index < 0) index = slides.length - 1;
+        slides.forEach(s => s.classList.remove('active-slide'));
+        dots.forEach(d => d.classList.remove('active-dot'));
+        slides[index].classList.add('active-slide');
+        dots[index].classList.add('active-dot');
+        slideIndex = index;
+    }
+
+    function changeSlide(direction) {
+        showSlide(slideIndex + direction);
+    }
+
+    function currentSlide(index) {
+        showSlide(index);
+    }
+
+    // autoplay every 5 seconds
+    setInterval(() => {
+        changeSlide(1);
+    }, 5000);
+</script>
+
+<!-- smooth scroll for floating nav -->
+<script>
+    document.querySelectorAll('.floating-nav a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const hash = link.getAttribute('href');
+            if (hash === '#') window.scrollTo({ top: 0, behavior: 'smooth' });
+            else if (hash) {
+                const target = document.querySelector(hash);
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+</body>
+</html>
