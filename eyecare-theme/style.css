@@ -207,8 +207,8 @@ body {
 .floating-nav {
     display: flex;
     justify-content: center;
-    gap: 3rem;
-    padding: 1.2rem 2rem;
+    gap: 1rem;
+    padding: 0.8rem 1.5rem;
     background: #ffffffdd;
     backdrop-filter: blur(16px);
     border-radius: 100px;
@@ -229,15 +229,15 @@ body {
 
 .floating-nav ul {
     display: flex;
-    gap: 3rem;
+    gap: 0.8rem;
 }
 
 .floating-nav a {
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 0.95rem;
     color: var(--sapphire);
-    padding: 0.6rem 1.2rem;
+    padding: 0.35rem 0.8rem;
     border-radius: 60px;
     transition: 0.2s;
     display: block;
@@ -372,6 +372,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 3rem;
+    overflow: hidden;
+    position: relative;
 }
 
 .king-left i {
@@ -381,6 +383,8 @@ body {
 }
 
 .king-left img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1132,7 +1136,11 @@ body {
     }
 
     .king-left img {
-        max-height: 260px;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        max-height: none;
         object-fit: cover;
     }
 
