@@ -117,13 +117,24 @@ function eyecare_customizer_register( $wp_customize ) {
         'panel' => 'eyecare_featured_panel',
     ] );
 
+    // Featured person image upload
+    $wp_customize->add_setting( 'king_image', [
+        'default'           => '',
+        'sanitize_callback' => 'esc_url_raw',
+        'transport'         => 'refresh',
+    ] );
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'king_image', [
+        'label'       => __( 'Featured Person Photo', 'eyecare' ),
+        'description' => __( 'Upload a portrait photo of the featured person.', 'eyecare' ),
+        'section'     => 'eyecare_king_section',
+    ] ) );
+
     $king_fields = [
-        'king_name'     => [ 'label' => __( 'Name', 'eyecare' ),          'default' => 'King Dhuuh Baraar',           'type' => 'text' ],
-        'king_badge'    => [ 'label' => __( 'Badge Text', 'eyecare' ),     'default' => "Tolje'lo dynasty · last sovereign (early 1700s)", 'type' => 'text' ],
-        'king_desc'     => [ 'label' => __( 'Description', 'eyecare' ),    'default' => "King Dhuuh Baraar stands as the final monarch of the historic Isaaq Kingdom. As a ruler of the Tolje'lo dynasty, he embodied the legacy tracing back to Sheikh Isaaq Bin Ahmed. His reign marks the culmination of eight Tolje'lo kings who guided the Isaaq clans from the 13th century.", 'type' => 'textarea' ],
-        'king_btn_text' => [ 'label' => __( 'Button Text', 'eyecare' ),    'default' => "Watch elders' traditions",   'type' => 'text' ],
-        'king_btn_url'  => [ 'label' => __( 'Button URL', 'eyecare' ),     'default' => '#',                          'type' => 'url' ],
-        'king_icon'     => [ 'label' => __( 'Icon (FA class)', 'eyecare' ), 'default' => 'fas fa-user-turban',        'type' => 'text' ],
+        'king_name'     => [ 'label' => __( 'Name', 'eyecare' ),       'default' => 'King Dhuuh Baraar',           'type' => 'text' ],
+        'king_badge'    => [ 'label' => __( 'Badge Text', 'eyecare' ),  'default' => "Tolje'lo dynasty · last sovereign (early 1700s)", 'type' => 'text' ],
+        'king_desc'     => [ 'label' => __( 'Description', 'eyecare' ), 'default' => "King Dhuuh Baraar stands as the final monarch of the historic Isaaq Kingdom. As a ruler of the Tolje'lo dynasty, he embodied the legacy tracing back to Sheikh Isaaq Bin Ahmed. His reign marks the culmination of eight Tolje'lo kings who guided the Isaaq clans from the 13th century.", 'type' => 'textarea' ],
+        'king_btn_text' => [ 'label' => __( 'Button Text', 'eyecare' ), 'default' => "Watch elders' traditions",   'type' => 'text' ],
+        'king_btn_url'  => [ 'label' => __( 'Button URL', 'eyecare' ),  'default' => '#',                          'type' => 'url' ],
     ];
 
     foreach ( $king_fields as $key => $args ) {
@@ -147,13 +158,24 @@ function eyecare_customizer_register( $wp_customize ) {
     ] );
 
     $history_defaults = [
-        1 => [ 'icon' => 'fas fa-calendar-alt', 'title' => '14th Century',      'desc' => "Establishment after Adal Sultanate's fall — Tolje'lo dynasty takes lead." ],
-        2 => [ 'icon' => 'fas fa-flag',          'title' => "8 Tolje'lo Kings",  'desc' => 'From King Harun (1300s) to King Dhuuh Baraar (1700s), centuries of rule.' ],
-        3 => [ 'icon' => 'fas fa-people-group',  'title' => '8 Isaaq Clans',     'desc' => "Descended from Sheikh Ishaaq's eight sons, uniting under Tolje'lo." ],
+        1 => [ 'image' => '', 'title' => '14th Century',      'desc' => "Establishment after Adal Sultanate's fall — Tolje'lo dynasty takes lead." ],
+        2 => [ 'image' => '', 'title' => "8 Tolje'lo Kings",  'desc' => 'From King Harun (1300s) to King Dhuuh Baraar (1700s), centuries of rule.' ],
+        3 => [ 'image' => '', 'title' => '8 Isaaq Clans',     'desc' => "Descended from Sheikh Ishaaq's eight sons, uniting under Tolje'lo." ],
     ];
 
     for ( $i = 1; $i <= 3; $i++ ) {
-        foreach ( [ 'icon', 'title', 'desc' ] as $field ) {
+        // Image upload
+        $wp_customize->add_setting( "history_{$i}_image", [
+            'default'           => '',
+            'sanitize_callback' => 'esc_url_raw',
+            'transport'         => 'refresh',
+        ] );
+        $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, "history_{$i}_image", [
+            'label'   => sprintf( __( 'Card %d Image', 'eyecare' ), $i ),
+            'section' => 'eyecare_history_section',
+        ] ) );
+
+        foreach ( [ 'title', 'desc' ] as $field ) {
             $wp_customize->add_setting( "history_{$i}_{$field}", [
                 'default'           => $history_defaults[ $i ][ $field ],
                 'sanitize_callback' => 'sanitize_text_field',
@@ -185,13 +207,24 @@ function eyecare_customizer_register( $wp_customize ) {
     ] );
 
     $heritage_defaults = [
-        1 => [ 'icon' => 'fas fa-flag',       'title' => 'Adal Banner',   'desc' => 'Used by Adal & Isaaq on shrines.' ],
-        2 => [ 'icon' => 'fas fa-book-quran', 'title' => 'Sheikh Ishaaq', 'desc' => '12th c. arrival, 8 sons = 8 clans.' ],
-        3 => [ 'icon' => 'fas fa-tree',       'title' => 'King Harun',    'desc' => "First Tolje'lo ruler (1300s)." ],
+        1 => [ 'image' => '', 'title' => 'Adal Banner',   'desc' => 'Used by Adal & Isaaq on shrines.' ],
+        2 => [ 'image' => '', 'title' => 'Sheikh Ishaaq', 'desc' => '12th c. arrival, 8 sons = 8 clans.' ],
+        3 => [ 'image' => '', 'title' => 'King Harun',    'desc' => "First Tolje'lo ruler (1300s)." ],
     ];
 
     for ( $i = 1; $i <= 3; $i++ ) {
-        foreach ( [ 'icon', 'title', 'desc' ] as $field ) {
+        // Image upload
+        $wp_customize->add_setting( "heritage_{$i}_image", [
+            'default'           => '',
+            'sanitize_callback' => 'esc_url_raw',
+            'transport'         => 'refresh',
+        ] );
+        $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, "heritage_{$i}_image", [
+            'label'   => sprintf( __( 'Heritage %d Image', 'eyecare' ), $i ),
+            'section' => 'eyecare_heritage_section',
+        ] ) );
+
+        foreach ( [ 'title', 'desc' ] as $field ) {
             $wp_customize->add_setting( "heritage_{$i}_{$field}", [
                 'default'           => $heritage_defaults[ $i ][ $field ],
                 'sanitize_callback' => 'sanitize_text_field',

@@ -380,6 +380,13 @@ body {
     filter: drop-shadow(0 20px 15px #052d2d);
 }
 
+.king-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 .king-right {
     padding: 3rem 3rem 3rem 2.5rem;
     background: var(--cream);
@@ -458,6 +465,15 @@ body {
     font-size: 3.5rem;
     color: var(--amber);
     margin-bottom: 1rem;
+    display: block;
+}
+
+.history-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 40px 8px 40px 8px;
+    margin-bottom: 1.2rem;
     display: block;
 }
 
@@ -632,6 +648,15 @@ body {
 .heritage-piece i {
     font-size: 4rem;
     color: var(--ruby);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.heritage-piece-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 60px 8px 60px 8px;
     margin-bottom: 1rem;
     display: block;
 }
@@ -1104,6 +1129,11 @@ body {
 
     .king-left i {
         font-size: 8rem;
+    }
+
+    .king-left img {
+        max-height: 260px;
+        object-fit: cover;
     }
 
     .news-grid-dynamic,

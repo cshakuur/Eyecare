@@ -19,7 +19,12 @@ get_header();
 
         <div class="king-panel">
             <div class="king-left">
-                <i class="<?php echo esc_attr( get_theme_mod( 'king_icon', 'fas fa-user-turban' ) ); ?>" aria-hidden="true"></i>
+                <?php $king_img = get_theme_mod( 'king_image', '' ); ?>
+                <?php if ( $king_img ) : ?>
+                    <img src="<?php echo esc_url( $king_img ); ?>" alt="<?php echo esc_attr( get_theme_mod( 'king_name', 'King Dhuuh Baraar' ) ); ?>">
+                <?php else : ?>
+                    <i class="fas fa-user-turban" aria-hidden="true"></i>
+                <?php endif; ?>
             </div>
             <div class="king-right">
                 <div class="king-name"><?php echo esc_html( get_theme_mod( 'king_name', 'King Dhuuh Baraar' ) ); ?></div>
@@ -50,7 +55,12 @@ get_header();
         <div class="history-mosaic">
             <?php for ( $i = 1; $i <= 3; $i++ ) : ?>
             <div class="history-card">
-                <i class="<?php echo esc_attr( get_theme_mod( "history_{$i}_icon", 'fas fa-star' ) ); ?> history-icon" aria-hidden="true"></i>
+                <?php $hist_img = get_theme_mod( "history_{$i}_image", '' ); ?>
+                <?php if ( $hist_img ) : ?>
+                    <img src="<?php echo esc_url( $hist_img ); ?>" alt="<?php echo esc_attr( get_theme_mod( "history_{$i}_title", '' ) ); ?>" class="history-card-img">
+                <?php else : ?>
+                    <i class="fas fa-landmark history-icon" aria-hidden="true"></i>
+                <?php endif; ?>
                 <h3><?php echo esc_html( get_theme_mod( "history_{$i}_title", '' ) ); ?></h3>
                 <p><?php echo esc_html( get_theme_mod( "history_{$i}_desc", '' ) ); ?></p>
             </div>
@@ -180,7 +190,12 @@ get_header();
         <div class="heritage-showcase">
             <?php for ( $i = 1; $i <= 3; $i++ ) : ?>
             <div class="heritage-piece">
-                <i class="<?php echo esc_attr( get_theme_mod( "heritage_{$i}_icon", 'fas fa-star' ) ); ?>" aria-hidden="true"></i>
+                <?php $her_img = get_theme_mod( "heritage_{$i}_image", '' ); ?>
+                <?php if ( $her_img ) : ?>
+                    <img src="<?php echo esc_url( $her_img ); ?>" alt="<?php echo esc_attr( get_theme_mod( "heritage_{$i}_title", '' ) ); ?>" class="heritage-piece-img">
+                <?php else : ?>
+                    <i class="fas fa-landmark" aria-hidden="true"></i>
+                <?php endif; ?>
                 <h3><?php echo esc_html( get_theme_mod( "heritage_{$i}_title", '' ) ); ?></h3>
                 <p><?php echo esc_html( get_theme_mod( "heritage_{$i}_desc", '' ) ); ?></p>
             </div>
