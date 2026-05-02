@@ -35,7 +35,7 @@
         </div>
 
         <div class="footer-copy">
-            <?php echo esc_html( get_theme_mod( 'footer_copyright', '&copy; ' . gmdate( 'Y' ) ) ); ?>
+            <?php echo esc_html( str_replace( '[year]', gmdate( 'Y' ), get_theme_mod( 'footer_copyright', '&copy; ' . gmdate( 'Y' ) ) ) ); ?>
         </div>
     </div>
 

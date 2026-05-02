@@ -267,7 +267,7 @@ function eyecare_customizer_register( $wp_customize ) {
     ] );
 
     $wp_customize->add_setting( 'footer_copyright', [
-        'default'           => '© ' . gmdate( 'Y' ) . " · Tolje'lo Heritage",
+        'default'           => "© [year] · Tolje'lo Heritage",
         'sanitize_callback' => 'sanitize_text_field',
         'transport'         => 'refresh',
     ] );
