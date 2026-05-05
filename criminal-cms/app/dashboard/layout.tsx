@@ -4,16 +4,6 @@ import { useState } from "react";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
 
-const pageTitles: Record<string, string> = {
-  "/dashboard/admin": "Admin Dashboard",
-  "/dashboard/police": "Police Portal",
-  "/dashboard/investigation": "Investigation Tracking",
-  "/dashboard/prosecutor": "Prosecutor Review Panel",
-  "/dashboard/court": "Court Hearing Scheduler",
-  "/dashboard/judge": "Judge Decision Interface",
-  "/dashboard/prison": "Prison Management",
-  "/dashboard/reports": "Reports & Analytics",
-};
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const [mobileOpen, setMobileOpen] = useState(false);

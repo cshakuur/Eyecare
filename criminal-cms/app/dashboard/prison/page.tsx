@@ -58,7 +58,7 @@ export default function PrisonDashboard() {
           {[
             { name: "Central Correctional", current: 820, capacity: 900, color: "bg-blue-500" },
             { name: "Maximum Security Wing", current: 234, capacity: 300, color: "bg-red-500" },
-            { name: "Women&apos;s Correctional", current: 412, capacity: 500, color: "bg-purple-500" },
+            { name: "Women's Correctional", current: 412, capacity: 500, color: "bg-purple-500" },
             { name: "Juvenile Detention", current: 89, capacity: 150, color: "bg-yellow-500" },
             { name: "Minimum Security", current: 292, capacity: 350, color: "bg-green-500" },
           ].map(f => {
