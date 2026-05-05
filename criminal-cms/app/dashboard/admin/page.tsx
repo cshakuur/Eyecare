@@ -65,7 +65,7 @@ export default function AdminDashboard() {
           </div>
         </div>
         <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
-          <p className="text-sm font-semibold text-blue-800">📅 Today{"'"}s Schedule</p>
+          <p className="text-sm font-semibold text-blue-800">📅 Today&apos;s Schedule</p>
           <ul className="mt-2 space-y-1 text-xs text-blue-700">
             <li>• 09:00 – Trial hearing CRM-2024-001</li>
             <li>• 14:00 – Sentencing CRM-2024-003</li>
